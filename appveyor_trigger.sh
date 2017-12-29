@@ -17,9 +17,9 @@ _usage() {
 
 _trigger() {
 	curl -H "Content-Type: application/json" -H "Authorization: Bearer $APPVEYOR_API_TOKEN" -X POST -d "{
-    'accountName': '$3',
-    'projectSlug': '$1',
-    'branch': '$2'
+		'accountName': '$3',
+		'projectSlug': '$1',
+		'branch': '$2'
 	}" $4
 }
 
